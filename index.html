@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Material Design for Bootstrap</title>
+    <title>E-Commerce-Home</title>
     <!-- MDB icon -->
     <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
     <!-- Font Awesome -->
@@ -17,6 +17,8 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
     />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
     <!-- animate.css link -->
     <link
     rel="stylesheet"
@@ -38,7 +40,7 @@
     <!-- loading page end -->
     
     <!-- navbar start -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
+    <nav id="navb" class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">AmrElsherbiny</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,36 +49,40 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link active" href="contact.html">Contact Us</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
+                Sections
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#clothes">Clothes</a></li>
+                <li><a class="dropdown-item" href="#electric">Electric Devices</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item"href="#loc">Our Location</a></li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
+            
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+         
         </div>
       </div>
     </nav>
     <!-- navbar end -->
+    <!-- dark mood start -->
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mood-text text-center mb-4 animate__animated animate__bounceInDown">
+      <h1>Site Mood</h1>
       
-    
+    </div>
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 first-deal text-center mb-4 animate__animated animate__bounceInDown">
+      <i class=" dark-ic bi bi-brightness-high-fill" id="toggleDark"></i>
+      
+    </div>
+    <!-- dark mood end -->
+   
   
     <!-- deals start -->
     <section class="container-fluid">
@@ -92,7 +98,7 @@
         </div>
       </div>
    
-       <div data-aos="fade-right" class="col-xl-6 col-lg-6 col-md-6 col-sm-6 sec-deal  ">
+       <div data-aos="fade-right" class="col-xl-6 col-lg-6 col-md-6 col-sm-6 sec-deal mb-4 ">
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-mdb-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -104,7 +110,7 @@
        </div>
 
 
-      <div data-aos="fade-left" class="col-xl-6 col-lg-6 col-md-6 col-sm-6 sec-deal  mb-5 ">
+      <div data-aos="fade-right" class="col-xl-6 col-lg-6 col-md-6 col-sm-6 sec-deal  mb-5 ">
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-mdb-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -122,10 +128,10 @@
 
 
      <!-- clothes start -->
-     <section class="container-fluid clothes mb-5 ">
+     <section id="clothes" class="container clothes mb-5 ">
       <div class="row">
        
-        <div  class="col-xl-12 col-lg-12 col-md-12 col-sm-12 clothes-text mb-5 mt-5">
+        <div  class="col-xl-12 col-lg-12 col-md-12 col-sm-12 clothes-text mb-5 mt-5 ">
           <h1>clothes section</h1>
         </div>
         
@@ -133,14 +139,14 @@
           <div class="card">
             <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
               <img src="clothes img\l_20222-w2ie74z8-hkd-100-82-97-187_a.webp" class="img-fluid imgg"/>
-              <a href="#!">
+              <a href="mens clothes.html">
                 <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
               </a>
             </div>
             <div class="card-body">
               <h3 class="card-title text-center">Mens</h3>
               <h5 class="card-text mb-4">The best men's clothing at the best quality and price. Discover and enjoy</h5>
-              <a href="#!" class="btn btn-outline-danger">Show More</a>
+              <a href="mens clothes.html" class="btn btn-outline-danger">Show More</a>
             </div>
           </div>
         </div>
@@ -150,14 +156,14 @@
           <div class="card">
             <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
               <img src="clothes img\l_20222-w2hs02z8-cvl-85-65-90-179_5.webp" class="img-fluid imgg"/>
-              <a href="#!">
+              <a href="women clothes.html">
                 <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
               </a>
             </div>
             <div class="card-body">
               <h3 class="card-title text-center">Women</h3>
               <h5 class="card-text mb-4">The best Women's clothing at the best quality and price. Discover and enjoy</h5>
-              <a href="#!" class="btn btn-outline-danger">Show More</a>
+              <a href="women clothes.html" class="btn btn-outline-danger">Show More</a>
             </div>
           </div>
         </div>
@@ -167,14 +173,14 @@
           <div class="card">
             <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
               <img src="clothes img\l_20222-w2ai50z1-r2f-102-15_a.webp" class="img-fluid imgg"/>
-              <a href="#!">
+              <a href="kids clothes.html">
                 <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
               </a>
             </div>
             <div class="card-body">
               <h3 class="card-title text-center">Kids</h3>
               <h5 class="card-text mb-4">The best Kids's clothing at the best quality and price. Discover and enjoy</h5>
-              <a href="#!" class="btn btn-outline-danger">Show More</a>
+              <a href="kids clothes.html" class="btn btn-outline-danger">Show More</a>
             </div>
           </div>
         </div>
@@ -223,7 +229,7 @@
       
       <!-- electric devices start -->
        
-      <section class="container-fluid clothes electric mb-5 ">
+      <section id="electric" class="container  electric mb-5 ">
         <div class="row">
          
           <div  class="col-xl-12 col-lg-12 col-md-12 col-sm-12 clothes-text mb-5 mt-5 electric-text">
@@ -241,7 +247,7 @@
               <div class="card-body">
                 <h3 class="card-title text-center">Mobile Phones </h3>
                 <h5 class="card-text mb-4">The best Mobile Phones at the best quality and price. Discover and enjoy</h5>
-                <a href="#!" class="btn btn-outline-danger">Show More</a>
+                <a href="/mobiles.html" class="btn btn-outline-danger">Show More</a>
               </div>
             </div>
           </div>
@@ -250,7 +256,7 @@
           <div data-aos="zoom-in-up" class="col-xl-4 col-lg-4 col-md-4 col-sm-4 women mb-4 ">
             <div class="card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="Home appliances\download.jpg" class="img-fluid imgg"/>
+                <img src="Home aplliances img\home.jpg" class="img-fluid imgg"/>
                 <a href="#!">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>
@@ -258,7 +264,7 @@
               <div class="card-body">
                 <h3 class="card-title text-center">Home Appliances</h3>
                 <h5 class="card-text mb-4">The best Home Appliances at the best quality and price. Discover and enjoy</h5>
-                <a href="#!" class="btn btn-outline-danger">Show More</a>
+                <a href="/home appliances.html" class="btn btn-outline-danger">Show More</a>
               </div>
             </div>
           </div>
@@ -275,14 +281,34 @@
               <div class="card-body">
                 <h3 class="card-title text-center">Laptops And Tablets </h3>
                 <h5 class="card-text mb-4">The best Laptops And Tablets at the best quality and price. Discover and enjoy</h5>
-                <a href="#!" class="btn btn-outline-danger">Show More</a>
+                <a href="/laptops.html" class="btn btn-outline-danger">Show More</a>
               </div>
             </div>
           </div>
   
         </div>
        </section>
+       <hr class="mb-5">
        <!-- electric devices end -->
+
+       <!-- location start -->
+       <section id="loc" class="container">
+        <div class="row">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 clothes-text loc-text mb-4">
+            <h1>Our Store Location </h1>
+          </div>
+           
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 clothes-text mb-4">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3449.462497721304!2d31.686064015045623!3d30.16677978183799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1457f9054bb44dbd%3A0xddb2ce5fc611e5e8!2z2LXZitmG2YrZhyDYp9mE2KfZh9ix2KfZhSDYp9mE2KfYs9mD2KfZhg!5e0!3m2!1sen!2seg!4v1676224830167!5m2!1sen!2seg" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+        </div>
+       </section>
+       <!-- location end -->
+
+
+
+
 
 
        <!-- footer start -->
@@ -299,22 +325,22 @@
 
     <!-- Right -->
     <div>
-      <a href="" class="me-4 link-secondary">
+      <a href="https://www.facebook.com/profile.php?id=100085240531782" class="me-4 link-secondary">
         <i class="fab fa-facebook-f"></i>
       </a>
       <a href="" class="me-4 link-secondary">
         <i class="fab fa-twitter"></i>
       </a>
-      <a href="" class="me-4 link-secondary">
+      <a href="https://mail.google.com/mail/u/0/#inbox" class="me-4 link-secondary">
         <i class="fab fa-google"></i>
       </a>
-      <a href="" class="me-4 link-secondary">
+      <a href="https://www.instagram.com/amrelsherbiny20/" class="me-4 link-secondary">
         <i class="fab fa-instagram"></i>
       </a>
       <a href="" class="me-4 link-secondary">
         <i class="fab fa-linkedin"></i>
       </a>
-      <a href="" class="me-4 link-secondary">
+      <a href="https://github.com/Amr-Elsherbiny88" class="me-4 link-secondary">
         <i class="fab fa-github"></i>
       </a>
     </div>
@@ -330,7 +356,7 @@
         <!-- Grid column -->
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <!-- Content -->
-          <h6 class="text-uppercase fw-bold mb-4">
+          <h6 class=" fw-bold mb-4">
             <i class="fas fa-gem me-3 text-secondary"></i>AmrElsherbiny
           </h6>
           <p>
@@ -346,13 +372,13 @@
             Products
           </h6>
           <p>
-            <a href=".." class="text-reset">Mens Clothes</a>
+            <a href="/index.html#clothes" class="text-reset">Clothes</a>
           </p>
           <p>
-            <a href="#!" class="text-reset"> Women Clothes</a>
+            <a href="/index.html#electric" class="text-reset"> Electric devices</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Kids Clothes</a>
+            <a href="/index.html#loc" class="text-reset">Our Location</a>
           </p>
           
         </div>
@@ -361,16 +387,17 @@
         <!-- Grid column -->
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
           <!-- Links -->
-          
+          <h6 class="text-uppercase fw-bold mb-4">
+             Links to help
+          </h6>
+
           <p>
-            <a href="#!" class="text-reset">Mobile Phones</a>
+            <a href="#navb" class="text-reset">Go To Up</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Home Appliances</a>
+            <a href="/contact.html" class="text-reset">Contact Us</a>
           </p>
-          <p>
-            <a href="#!" class="text-reset">Laptops And Tablets</a>
-          </p>
+         
         </div>
         <!-- Grid column -->
 
@@ -380,11 +407,10 @@
           <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
           <p><i class="fas fa-home me-3 text-secondary"></i> Cairo, Badr city, Egy</p>
           <p>
-            <i class="fas fa-envelope me-3 text-secondary"></i>
-            amouryelsherbiny178@gmail.com
-          </p>
+            <i class="fas fa-envelope me-3 text-secondary"></i> amouryelsherbiny178@gmail.com</p>
           <p><i class="fas fa-phone me-3 text-secondary"></i> 011 017 617 85</p>
           <p><i class="fas fa-print me-3 text-secondary"></i> 011 017 617 85</p>
+         
         </div>
         <!-- Grid column -->
       </div>
@@ -395,12 +421,13 @@
 
   <!-- Copyright -->
   <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
-    © 2021 Copyright:
+    © 2023 Copyright:
     <a class="text-reset fw-bold" href="..">AmrElsherbiny</a>
   </div>
   <!-- Copyright -->
 </footer>
 <!-- Footer -->
+<!-- footer end -->
 
 
 
@@ -427,10 +454,7 @@
 
 
 
-
-
-
-     <script src="js/jquery-3.3.1.min.js"></script>
+     
 
     <!-- java script -->
     <script src="js.js"></script>
